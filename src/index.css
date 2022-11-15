@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components{
     .list{
         @apply text-sm text-[#F1F3F9] mb-[13px] cursor-pointer hover:scale-110 ease-in-out duration-300

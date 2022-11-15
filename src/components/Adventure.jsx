@@ -11,11 +11,11 @@ import desertKing8 from "../assets/Adventures assets/Frame 151 (14).svg";
 
 const Adventure = () => {
   return (
-    <section className="bg-white  px-8 mt-5 pt-10 pb-[53px] md:px-[100px] lg:h-[963px]">
-      <h2 className="font-bold text-5xl text-center mb-[43px]">
+    <section className="bg-white  px-8 mt-5 pt-10 pb-[53px] md:px-[80px]  lg:px-[100px] xl:h-[963px]">
+      <h2 className="font-bold text-3xl md:text-5xl text-center mb-[43px]">
         Inspiration for your next adventure
       </h2>
-      <div className="grid grid-cols-1 gap-y-6 gap-x-12 md:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-y-6 gap-x-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <AdventuresLocation
           img={desertKing}
           name="Desert king"

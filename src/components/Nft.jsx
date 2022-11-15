@@ -3,9 +3,9 @@ import frame from '../assets/frame.svg'
 
 const Nft = () => {
   return (
-    <section className="  bg-[#a02279] text-center  border border-black flex flex-col-reverse items-center justify-between p-8 md:text-left md:h-[774px] md:p-[100px] md:flex-row md:gap-x-[122px]">
+    <section className="  bg-[#a02279] w-full text-center  border border-black flex flex-col-reverse items-center justify-between p-8 md:text-left md:h-[774px] md:p-[80px] md:flex-row md:gap-x-20 lg:p-[100px]  lg:gap-x-[122px]">
       <div className="">
-        <h1 className="font-bold mt-12  text-white text-5xl mb-[35px]  md:mt-0">
+        <h1 className="font-bold mt-12  text-white text-5xl mb-[35px]  md:whitespace-nowrap  md:mt-0">
           Metabnb NFTs
         </h1>
         <p className="text-white text-lg leading-[35px] mb-[58px] md:max-w-[415px]">

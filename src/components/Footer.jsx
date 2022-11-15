@@ -7,14 +7,14 @@ import copyright from "../assets/footer assets/copyright.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1D1D1E] relative flex justify-center items-center flex-col px-8 pt-[63px] pb-[37px] md:flex-row md:px-[100px]  md:items-start md:justify-start md:h-[322px] md:gap-x-[187px]">
-      <div className="flex flex-col items-center md:items-start">
+    <footer className="bg-[#1D1D1E] relative flex justify-center items-center flex-col px-8 pt-[63px] pb-[37px] lg:flex-row lg:px-[100px] lg:items-start lg:justify-start lg:h-[322px] lg:gap-x-[187px]">
+      <div className="flex flex-col items-center lg:items-start">
         <img
-          className="w-[233px] mb-20 md:mb-[100px]"
+          className="w-[233px] mb-20 lg:mb-[100px]"
           src={metabnbLogo}
           alt="Metabnb Logo"
         />
-        <div className="flex flex-col absolute bottom-0 mb-4 md:mb-0 md:relative">
+        <div className="flex flex-col absolute bottom-0 mb-4 lg:mb-0 lg:relative">
           <div className="flex gap-x-[41px] mb-[57px]">
             <img src={facebook} alt="facebook icon" />
             <img src={insta} alt="instagram icon" />
@@ -27,15 +27,15 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center text-center mb-32 flex-col md:text-left md:justify-between md:flex-row md:gap-x-[217px]">
-        <div className="flex flex-col mb-8 md:mb-0">
+      <div className="flex justify-center text-center mb-32 flex-col lg:text-left lg:justify-between lg:flex-row lg:gap-x-[217px]">
+        <div className="flex flex-col mb-8 lg:mb-0">
           <h5 className="text-lg font-bold text-white mb-[23px]">Community</h5>
           <p className="list">NFT</p>
           <p className="list">Tokens</p>
           <p className="list">Landlords</p>
           <p className="list">Discord</p>
         </div>
-        <div className="flex flex-col mb-8 md:mb-0">
+        <div className="flex flex-col mb-8 lg:mb-0">
           <h5 className="text-lg font-bold text-white mb-[23px]">Places</h5>
           <p className="list">Castle</p>
           <p className="list">Farms </p>

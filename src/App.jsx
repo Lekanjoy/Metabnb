@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Error404 from "./components/Error404";
-import NFTs from "./components/Nft";
+import Nft from "./components/Nft";
 import PlaceToStay from "./components/pages/PlaceToStay";
 
 export const WalletModal = createContext();
@@ -12,14 +12,12 @@ function App() {
   const [showConnectWallet, setShowConnectWallet] = useState(false);
 
   return (
-    <WalletModal.Provider
-      value={{ showConnectWallet, setShowConnectWallet }}
-    >
+    <WalletModal.Provider value={{ showConnectWallet, setShowConnectWallet }}>
       <Routes>
         <Route path="/">
           <Route element={<Layout />}>
             <Route index element={<Home />} />
-            {/* <Route path="nft" element={<NFTs />} /> */}
+            <Route path="nft" element={<Nft />} />
             <Route path="/placetostay" element={<PlaceToStay />} />
             <Route path="*" element={<Error404 />} />
           </Route>

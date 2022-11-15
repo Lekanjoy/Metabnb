@@ -11,14 +11,14 @@ const Home = () => {
   const {showConnectWallet} = useContext(WalletModal)
   return (
     <main className="relative mt-[80px] md:mt-[133px]">
-      <section className="font-[Nunito] flex flex-col-reverse justify-between items-center mb-[67px]  px-8 md:px-[100px] md:flex-row md:gap-x-[99px]">
-        <div className=" w-full mt-6 md:w-[646px] md:mt-0">
-          <h1 className="font-bold text-[42px] md:text-[56px] md:leading-[78px] md:mb-12">
+      <section className="font-[Nunito] w-full flex flex-col-reverse justify-between items-center mb-[67px]  px-8 md:px-[80px]  md:flex-row md:gap-x-[99px] lg:px-[100px]">
+        <div className=" w-full mt-6 md:max-w-4/5 xl:w-[646px] md:mt-0">
+          <h1 className="font-bold text-center text-3xl mb-4 md:text-[56px] md:text-left md:leading-[78px] md:mb-12">
             Rent a <span className="text-[#a02279]">Place </span>away from{" "}
             <span className="text-[#a02279]">Home</span> in the{" "}
             <span className="text-[#a02279]">Metaverse</span>
           </h1>
-          <p className="text-blackPrimary text-xl md:text-2xl mb-12">
+          <p className="text-blackPrimary text-xl text-center md:text-left md:text-2xl mb-12">
             we provide you access to luxury and affordable houses in the
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
@@ -37,19 +37,14 @@ const Home = () => {
             </button>
           </form>
         </div>
-        <div className="w-full md:w-[476px]">
+        <div className="w-full md:hidden xl:flex ">
           <img
-            className="w-full"
+            className="w-full "
             src={illust}
             alt="adventure location images"
           />
         </div>
       </section>
-      {showConnectWallet && (
-        <div className="fixed top-[0] flex justify-center items-center px-8 w-full h-screen">
-          <Wallets />
-        </div>
-      )}
       <Products />
       <Adventure />
       <Nft />

@@ -24,15 +24,16 @@ const handleToggleMenu = () => {
  };
 
   return (
-    <header className="pt-[43px] h-[48px] w-full relative flex justify-between items-center  px-8 md:px-[100px]">
-      <img className="max-w-[188px]" src={logo} alt="logo image" />
+    <header className="pt-[43px] h-[48px] w-full relative flex justify-between mb-[120px] items-center px-8 md:px-[80px]  lg:px-[100px]">
+      <img id="logo" className="max-w-[188px] z-50" src={logo} alt="logo image" />
       <img
+      id="hamburger"
         onClick={handleToggleMenu}
-        className="md:hidden cursor-pointer"
+        className="lg:hidden cursor-pointer z-50"
         src={hamburger}
         alt="menu icon"
       />
-      <nav className="hidden md:flex md:flex-row md:gap-x-12">
+      <nav className="hidden lg:flex lg:flex-row lg:gap-x-12">
         <Link to="/" className="text-white md:text-blackPrimary text-xl ">
           Home
         </Link>
@@ -51,12 +52,16 @@ const handleToggleMenu = () => {
       </nav>
       <button
         onClick={handleShowModal}
-        className="hidden  place-items-center place-content-center  text-white md:grid bg-[#a02279] rounded-[10px] w-[170px] h-12"
+        className="hidden  place-items-center place-content-center  text-white lg:grid bg-[#a02279] rounded-[10px] w-[170px] h-12"
       >
         Connect wallet
       </button>
       {/* Mobile Menu */}
-      {showMenu && <Menu handleToggleMenu={handleToggleMenu} />}
+      {showMenu && (
+        <div className="fixed z-40 left-0 w-full h-screen bg-[#150c0c4d] top-0">
+          <Menu handleToggleMenu={handleToggleMenu} />
+        </div>
+      )}
       {/* Mobile Menu */}
     </header>
   );
