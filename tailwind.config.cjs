@@ -10,6 +10,9 @@ module.exports = {
         blackPrimary: "#434343",
       },
     },
+    fontFamily:{
+      RedRose:'Red Rose'
+    }
   },
   plugins: [],
 };

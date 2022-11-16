@@ -8,7 +8,7 @@ const Layout = () => {
   const { showConnectWallet } = useContext(WalletModal);
 
   return (
-    <main className="relative">
+    <main className="relative font-[RedRose]">
       <Header />
       {showConnectWallet && (
         <div className="fixed top-[0] bg-[#150c0c4d] z-20 flex justify-center items-center px-8 w-full h-screen">
